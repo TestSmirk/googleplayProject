@@ -190,7 +190,7 @@ public class MainPresenter implements MainPresenterImpl, SpeechSynthesizerListen
                         recycleListView.postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                layout.scrollToPosition(adapter.getData().size());
+                                layout.scrollToPosition(0);
                             }
                         }, 300);
                     }
