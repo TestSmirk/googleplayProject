@@ -6,4 +6,14 @@ package com.testsmirk.qafun.activity.main.presenter;
 
 public interface MainPresenterImpl {
     void init();
+
+    void onRestart();
+
+    void onDestroy();
+
+    void onResume();
+
+    void onStart();
+
+    void onStop();
 }
