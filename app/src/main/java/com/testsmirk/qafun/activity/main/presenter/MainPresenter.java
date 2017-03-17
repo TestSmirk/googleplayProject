@@ -334,6 +334,7 @@ public class MainPresenter implements MainPresenterImpl, SpeechSynthesizerListen
                     int margin = DensityUtil.dip2px(activity, 10);
                     layoutParams.setMargins(margin, margin, margin, margin);
                     view.setLayoutParams(layoutParams);
+                    MainPresenter.this.speechSynthesizer.setParam(PARAM_SPEAKER, String.valueOf(0));
                     MainPresenter.this.speechSynthesizer.speak(text);
                 }
                 helper.setText(R.id.tv_main_name, text);
